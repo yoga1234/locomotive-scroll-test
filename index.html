@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="yogasmara">
+  <title>Locomotive test</title>
+  <link rel="stylesheet" href="./locomotive-scroll.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div data-scroll-container>
+    <div class="section-1" data-scroll-section>
+      <h2 data-scroll class="text-header">TEXT SECTION</h2>
+      <p data-scroll class="text-subheader">Almost before we knew it, we had left the ground.</p>
+    </div>
+    <div class="section-2" data-scroll-section>
+      <h2 data-scroll data-scroll-delay="0.09" data-scroll-speed="6"  class="text-header">TEXT SECTION</h2>
+      <p data-scroll data-scroll-delay="0.09" data-scroll-speed="-6" class="text-subheader">Almost before we knew it, we had left the ground.</p>
+    </div>
+    <div class="section-3" data-scroll-section>
+      <h2 data-scroll data-scroll-speed="-2" class="text-header">TEXT SECTION</h2>
+      <p data-scroll data-scroll-speed="5" class="text-subheader">Almost before we knew it, we had left the ground.</p>
+    </div>
+    <div class="section-4" data-scroll-section>
+      <h2 data-scroll data-scroll-direction="horizontal" data-scroll-speed="5" class="text-header">TEXT SECTION</h2>
+      <p data-scroll data-scroll-direction="horizontal" data-scroll-speed="-5" class="text-subheader">Almost before we knew it, we had left the ground.</p>
+    </div>
+    <div class="section-5" data-scroll-section>
+      <h2 data-scroll class="text-header">TEXT SECTION</h2>
+      <p data-scroll class="text-subheader">Almost before we knew it, we had left the ground.</p>
+    </div>
+  </div>
+
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script> -->
+  <script src="./locomotive-scroll.min.js"></script>
+  <script>
+    const scroll = new LocomotiveScroll({
+      el: document.querySelector('[data-scroll-container]'),
+      smooth: true
+    });
+  </script>
+</body>
+</html>
